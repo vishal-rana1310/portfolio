@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,13 +10,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #000;
   color: white;
 }
 
@@ -35,4 +25,151 @@
   to {
     transform: rotate(360deg);
   }
+}
+.menu h3 {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.menu h3:hover {
+  color: yellowgreen;
+}
+.hero-section {
+  color: #fff;
+  padding-top: 150px !important;
+}
+.hero-img {
+  -webkit-animation: morph 8s ease-in-out infinite;
+  animation: morph 8s ease-in-out infinite;
+  background-image: url("./images/hero-image.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid yellowgreen;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  height: 25rem;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+.tech-stack p {
+  display: grid;
+  place-items: center;
+  padding-right: 30px;
+  margin-right: 20px;
+  border-right: 1px solid rgb(60, 60, 60);
+}
+.tech-stack div.tech-item {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #61dafb35;
+  border-radius: 50%;
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.tech-stack img {
+  width: 100%;
+  object-fit: contain;
+}
+.tech-item {
+  position: relative;
+}
+.tooltip {
+  background: white;
+  color: #000;
+  position: absolute;
+  bottom: 120%;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 5px 20px;
+}
+.tip {
+  position: absolute;
+  top: 78%;
+  background: #fff;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+}
+.about-img-section img {
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+.heading {
+  position: relative;
+  display: flex;
+}
+.heading::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 18px;
+  width: 200px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: rgba(255, 255, 255, 0.237);
+}
+.company-name {
+  border-left: 4px solid rgb(85, 85, 85);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transition: 0.3s;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.company-name:hover {
+  background: rgb(27, 27, 27);
+}
+.company-name.active {
+  border-left: 4px solid yellow;
+  background: rgb(27, 27, 27);
+}
+.project-details {
+  position: relative;
+  cursor: pointer;
+}
+.project-desc {
+  position: absolute;
+  width: 55%;
+  background: #2a2a2a;
+  border-radius: 3px;
+  z-index: 5;
+}
+.project-image img {
+  -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(80%);
+  transition: 0.2s;
+  cursor: pointer;
+  border: 1px solid #7070708d;
+}
+.project-details:hover .project-image img {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+.tech-stack {
+  margin-top: 140px;
 }
