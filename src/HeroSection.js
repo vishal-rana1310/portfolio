@@ -64,34 +64,45 @@ export default function HeroSection() {
     console.log(item);
   };
   return (
-    <div className="container p-10 w-3/5 hero-section m-auto">
-      <div className="intro flex">
-        <div className="intro-content w-3/5 font-bold">
-          <h1 className="text-6xl mt-10 mb-10">Front-End Web Developer 👋</h1>
-          <p className="font-normal text-lg w-4/5 text-gray-400">
+    <div className="container p-10 w-full sm:w-3/5 hero-section m-auto">
+      <div className="intro flex-col sm:flex-row sm:flex">
+        <div className="intro-content w-full sm:w-3/5 mb-5 font-bold">
+          <h1 className="text-3xl sm:text-6xl mt-10 mb-10">
+            Front-End Web Developer 👋
+          </h1>
+          <p className="font-normal text-lg w-full sm:w-4/5 text-gray-400">
             Hi, I'm Vishal Kumar. A passionate Front-end Web Developer based in
             India, Delhi. 📍
           </p>
           <div className="socials mt-8 flex">
-            <FaLinkedin
-              className="text-3xl text-gray-400"
-              style={{ marginRight: "1.5rem" }}
-            />
-            <FaGithub
-              className="text-3xl text-gray-400"
-              style={{ marginRight: "1.5rem" }}
-            />
-            <FaDesktop
-              className="text-3xl text-gray-400"
-              style={{ marginRight: "1.5rem" }}
-            />
+            <a
+              href="https://www.linkedin.com/in/vishalkumarpundir/"
+              target="_blank"
+            >
+              <FaLinkedin
+                className="text-3xl text-gray-400"
+                style={{ marginRight: "1.5rem" }}
+              />
+            </a>
+            <a href="https://github.com/vishal-rana1310" target="_blank">
+              <FaGithub
+                className="text-3xl text-gray-400"
+                style={{ marginRight: "1.5rem" }}
+              />
+            </a>
+            <a href="https://www.fiverr.com/vishalrana1302" target="_blank">
+              <FaDesktop
+                className="text-3xl text-gray-400"
+                style={{ marginRight: "1.5rem" }}
+              />
+            </a>
           </div>
         </div>
-        <div className="profile-photo w-2/5">
+        <div className="profile-photo w-full hidden sm:w-2/5 sm:block">
           <div className="hero-img w-full"></div>
         </div>
       </div>
-      <div className="tech-stack mt-10 pt-10 flex">
+      <div className="tech-stack sm:mt-10 sm:pt-10 sm:flex">
         <p className="text-2xl text-gray-400 font-bold">Tech Stack</p>
         {techStack.map((item, index) => {
           return (

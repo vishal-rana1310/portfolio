@@ -22,9 +22,12 @@ export default function Experiences() {
     setSelectedCompany(item.id);
   };
   return (
-    <div className="container p-10 w-1/2 hero-section m-auto" id="experience">
+    <div
+      className="container p-4 sm:p-10 w-full sm:w-1/2 hero-section m-auto"
+      id="experience"
+    >
       <h1 className="font-bold text-2xl heading mb-10">Experiences I Got</h1>
-      <div className="experience-section mb-5 flex">
+      <div className="experience-section mb-5 sm:flex">
         <div className="names">
           {companies.map((item, index) => {
             return (
@@ -35,7 +38,7 @@ export default function Experiences() {
                 key={index}
                 onClick={() => selectCompany(item)}
               >
-                <p className="text-sm">{item.name}</p>
+                <p className="text-xs sm:text-sm">{item.name}</p>
               </div>
             );
           })}

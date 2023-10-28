@@ -2,12 +2,15 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="container p-10 w-3/5 hero-section m-auto" id="about">
-      <div className="flex mb-10">
-        <div className="about-img-section w-2/5">
+    <div
+      className="container p-4 sm:p-10 w-full sm:w-3/5 hero-section m-auto"
+      id="about"
+    >
+      <div className="sm:flex mb-10">
+        <div className="about-img-section w-full sm:w-2/5">
           <img src={require("./images/about-img.jpg")} classname="w-full" />
         </div>
-        <div className="about-img-section w-3/5 px-10">
+        <div className="about-img-section w-full sm:w-3/5 px-4 mt-12 sm:mt-0 sm:px-10">
           <h1 className="font-bold text-2xl mt-5 heading">About Me</h1>
           <p className="text-gray-500 text-2xl font-bold mt-4">
             A dedicated{" "}

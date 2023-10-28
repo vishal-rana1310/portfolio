@@ -3,7 +3,7 @@ import { FaCaretRight } from "react-icons/fa";
 
 export default function Company3() {
   return (
-    <div className="px-8 py-2">
+    <div className="px-2 sm:px-8 py-2">
       <h1 className="text-lg font-bold mb-4">
         Freelacing has been a great learning source for me.
       </h1>
