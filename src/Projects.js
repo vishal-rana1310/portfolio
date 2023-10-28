@@ -61,13 +61,13 @@ export default function Projects() {
         >
           <div>
             <p
-              className="text-2xl text-right"
+              className="text-2xl text-right icon-margin"
               style={{ color: "yellowgreen", marginRight: "-40px" }}
             >
               Boostify
             </p>
             <p
-              className="text-lg text-right text-gray-400 mt-2"
+              className="text-lg text-right text-gray-400 mt-2 icon-margin"
               style={{ marginRight: "-40px" }}
             >
               Google Review Automation
@@ -92,7 +92,7 @@ export default function Projects() {
                 <span className="text-xs text-gray-400 ml-5">ASP.Net, SQL</span>
               </div>
               <div
-                className="flex justify-end"
+                className="icon-margin sm:flex sm:justify-end"
                 style={{ marginRight: "-40px" }}
               >
                 <a href="https://www.boostify.org.uk/" target="_blank">

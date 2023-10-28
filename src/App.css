@@ -232,9 +232,9 @@
   .tech-stack div.tech-item {
     display: inline-block;
     margin-top: 10px;
-    height: 50px;
-    width: 50px;
-    margin-left: 15px;
+    height: 100px;
+    width: 100px;
+    margin-left: 25px;
   }
   .company-name {
     border: 0;
@@ -279,5 +279,8 @@
   }
   .names{
     display: flex;
+  }
+  .icon-margin{
+    margin-right: 0 !important;
   }
 }
