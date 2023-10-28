@@ -66,6 +66,9 @@ export default function HeroSection() {
   return (
     <div className="container p-10 w-full sm:w-3/5 hero-section m-auto">
       <div className="intro flex-col sm:flex-row sm:flex">
+        <div className="profile-photo w-full sm:hidden sm:w-2/5 sm:block">
+          <div className="hero-img w-full"></div>
+        </div>
         <div className="intro-content w-full sm:w-3/5 mb-5 font-bold">
           <h1 className="text-3xl sm:text-6xl mt-10 mb-10">
             Front-End Web Developer 👋

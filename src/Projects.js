@@ -102,7 +102,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="w-full block sm:hidden sm:w-1/2 project-image">
+        <div className="w-full block sm:hidden sm:w-1/2 mt-5 sm:mt-0 project-image">
           <a href="https://www.boostify.org.uk/" target="_blank">
             <img
               className="w-full h-[300px] object-cover"
